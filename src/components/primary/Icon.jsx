@@ -15,16 +15,9 @@ const Path = styled.path`
   fill: currentColor;
 `;
 
-/**
- * An Icon is a piece of visual element, but we must ensure its accessibility while using it.
- * It can have 2 purposes:
- *
- * - *decorative only*: for example, it illustrates a label next to it. We must ensure that it is ignored by screen readers, by setting `aria-hidden` attribute (ex: `<Icon icon="check" aria-hidden />`)
- * - *non-decorative*: it means that it delivers information. For example, an icon as only child in a button. The meaning can be obvious visually, but it must have a proper text alternative via `aria-label` for screen readers. (ex: `<Icon icon="print" aria-label="Print this document" />`)
- */
 export function Icon({ icon, block, width, height, ...props }) {
   return (
-    <Svg viewBox="0 0 24 24" width={width} height={height} block={block} {...props}>
+    <Svg viewBox="0 0 21 21" width={width} height={height} block={block} {...props}>
       <Path d={icons[icon]} />
     </Svg>
   );
