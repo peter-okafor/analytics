@@ -25,6 +25,9 @@ const StyledDiv = styled.div`
       height: 37px;
       display: flex;
       flex-direction: column;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
 
       .company {
         font-style: normal;
