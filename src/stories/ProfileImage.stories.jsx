@@ -3,10 +3,7 @@ import { ProfileImage } from '../components/primary';
 
 export default {
   title: 'Analytics/ProfileImage',
-  component: ProfileImage,
-  argTypes: {
-    backgroundColor: { control: 'color' },
-  },
+  component: ProfileImage
 };
 
 const Template = (args) => <ProfileImage {...args} />;

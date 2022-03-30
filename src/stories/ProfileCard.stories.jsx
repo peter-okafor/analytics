@@ -3,10 +3,7 @@ import { ProfileCard } from '../components/secondary';
 
 export default {
   title: 'Analytics/ProfileCard',
-  component: ProfileCard,
-  argTypes: {
-    backgroundColor: { control: 'color' },
-  },
+  component: ProfileCard
 };
 
 const Template = (args) => <ProfileCard {...args} />;
