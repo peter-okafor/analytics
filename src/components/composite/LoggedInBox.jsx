@@ -20,7 +20,7 @@ const StyledDiv = styled.div`
   .notification {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     padding: 0px;
 
@@ -28,12 +28,13 @@ const StyledDiv = styled.div`
     height: 18px;
 
     .ant-badge-count {
-      z-index: auto;
       min-width: 16px;
       height: 16px;
       padding: 0;
       color: #fff;
-      font-weight: normal;
+      font-family: 'Gelion';
+      font-style: normal;
+      font-weight: 400;
       font-size: 12px;
       line-height: 16px;
       white-space: nowrap;
@@ -41,6 +42,10 @@ const StyledDiv = styled.div`
       background: #ff4d4f;
       border-radius: 4px;
       box-shadow: 0 0 0 1px #fff;
+
+      ..ant-scroll-number-only {
+        height: 16px;
+      }
     }
   }
 
