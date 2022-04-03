@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { RoundProfileImage } from "../primary";
+import { Divider, RoundProfileImage } from "../primary";
 import { Icon } from "../primary/Icon";
 import { Notification } from "../secondary";
 
@@ -49,13 +49,6 @@ const StyledDiv = styled.div`
     }
   }
 
-  .divider {
-    width: 1px;
-    height: 24px;
-
-    background: #ECEBF5;
-  }
-
   .profile-image {
     display: flex;
     flex-direction: row;
@@ -73,7 +66,7 @@ const LoggedInBox = ({ numberOfNotifications }) => {
       <div className="notification">
         <Notification count={numberOfNotifications} />
       </div>
-      <div className="divider"></div>
+      <Divider />
       <div className="profile-image">
         <RoundProfileImage />
         <Icon icon={'down'} width={16} height={16} block={true} style={{color: "#A3A3C2"}} />
