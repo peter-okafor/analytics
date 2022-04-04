@@ -12,7 +12,9 @@ const StyledInput = styled(Input)`
   box-sizing: border-box;
   border-radius: 8px;
 
-  ::placeholder {
+  padding: 10px 16px 10px 16px;
+
+  input::placeholder {
     font-family: 'Gelion';
     font-style: normal;
     font-weight: 400;
@@ -21,11 +23,16 @@ const StyledInput = styled(Input)`
 
     color: #A3A3C2;
   }
+
+  .ant-input-prefix {
+    margin-right: 16px;
+  }
 `
 
 const SearchInput = ({...props}) => {
   return (
     <StyledInput
+      placeholder="Search"
       prefix={<SearchIcon icon="search" height={16} width={16} />}
       {...props} 
     />
